@@ -37,19 +37,18 @@ The following **optional** features are implemented:
 The following **additional** features are implemented:
 
 - [x] Implemented smooth card flip animations
-- [x] Added 1-second delay before unmatched cards flip back
 - [x] Created interactive size picker with 5 difficulty options (4, 6, 8, 10, 12 pairs)
 - [x] Color-coded buttons (orange for Choose Size, green for Reset Game)
-- [x] Visual feedback in size picker showing currently selected difficulty
 
 ## Video Walkthrough
 
-Here's a walkthrough of implemented user stories:
-
-[Add your Loom video link here]
-
-[Guide on how to embed Loom videos on GitHub](https://www.youtube.com/watch?v=GA92eKlYio4)
-
+<div>
+    <a href="https://www.loom.com/share/44b64ed42dbb43fdaa3676ade16b3767">
+    </a>
+    <a href="https://www.loom.com/share/44b64ed42dbb43fdaa3676ade16b3767">
+      <img style="max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/44b64ed42dbb43fdaa3676ade16b3767-cd93f748b048cff5-full-play.gif">
+    </a>
+  </div>
 ## Notes
 
 One challenge encountered while building the app was implementing the game logic for tracking card states. Initially, when users selected a new game size from the picker, the number of cards wouldn't update properly. This was solved by passing the `resetGame()` function as a closure to the `SizePickerView` component, ensuring that whenever a user selects a new difficulty level, the game board automatically regenerates with the correct number of card pairs and properly shuffles them.
